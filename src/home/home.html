@@ -1,0 +1,13 @@
+<div class="container p-4">
+  <p class="lead">Type your python code below</p>
+  <highlighted-input-component
+  on-content-update="$ctrl.onCodeContentUpdate(content)">
+  </highlighted-input-component>
+  <div class="d-flex flex-row-reverse">
+    <button class="btn btn-primary" ng-click="$ctrl.runCode()">Run</button>
+  </div>
+
+  <div class="jumbotron mt-4">
+    <p ng-repeat="result in $ctrl.results">{{result}}</p>
+  </div>
+</div>

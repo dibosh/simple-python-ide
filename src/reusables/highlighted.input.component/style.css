@@ -1,0 +1,27 @@
+.highlighted-input pre {
+  position: relative;
+  height: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.05);
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+.highlighted-input pre:focus-within {
+  border-color: rgb(34, 167, 240);
+}
+
+.highlighted-input code {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  height: 250px;
+  padding: 10px;
+  overflow-y: auto;
+  outline: none;
+}
